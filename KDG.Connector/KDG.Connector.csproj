@@ -2,7 +2,7 @@
 
   <PropertyGroup>
      <PackageId>KDG-Net-Connector</PackageId>
-     <Version>0.0.1</Version>
+     <Version>0.0.2</Version>
      <Authors>Kyle David Group</Authors>
      <Company>Kyle David Group</Company>
      <Description>A base library for creating external connections</Description>

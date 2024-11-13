@@ -200,6 +200,11 @@ namespace KDG.Connector
                         new Uri(url) :
                         KDG.Connector.Utilities.Parameters.GenerateUri(new Uri(url), config.urlParams);
 
+                if(config.AcceptHeader != null)
+                {
+                    client.DefaultRequestHeaders.Accept.Add(config.AcceptHeader);
+                }
+
                 return await AttemptSend<RESPONSE>(client, logResponseData, async () => await GetRequest(method, uri, config));
             }
         }
